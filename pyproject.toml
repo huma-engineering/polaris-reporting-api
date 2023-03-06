@@ -6,10 +6,6 @@ authors = ["Andrew Gill <andrew.gill@sensynehealth.com>"]
 keywords = ["Reporting"]
 repository = "https://github.com/draysontechnologies/dhos-reporting-api"
 
-[[tool.poetry.source]]
-name = "sensynehealth"
-url = "https://pypi.fury.io/sensynehealth/"
-
 [tool.poetry.dependencies]
 python = "^3.9"
 flask-batteries-included = {version = "3.*", extras = ["apispec", "pgsql"]}
