@@ -3,8 +3,8 @@ name: CI
 on: [workflow_dispatch, push, pull_request]
 
 env:
-  REGISTRY: humagdmacr.azurecr.io
-  ACR_USERNAME: humagdmacr
+  REGISTRY: uk0dev0current0acr.azurecr.io
+  ACR_USERNAME: uk0dev0current0acr
   SERVICE: dhos-reporting
 
 jobs:
