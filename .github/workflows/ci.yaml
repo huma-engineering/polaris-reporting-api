@@ -64,8 +64,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       ACR_REPO_BASE: dhos
-    permissions:
-      packages: write
     steps:
       - uses: actions/checkout@v3
       - name: Log in to the GitHub Packages
@@ -78,7 +76,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ${{ env.REGISTRY }}/${{ env.ACR_REPO_BASE }}/${{ env.SERVICE }}-api
+          images: ${{ env.REGISTRY }}/huma-engineering/${{ env.ACR_REPO_BASE }}/${{ env.SERVICE }}-api
           tags: |
             type=raw,value=dev
             type=sha
