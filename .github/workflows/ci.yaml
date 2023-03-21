@@ -64,6 +64,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       ACR_REPO_BASE: dhos
+    permissions:
+      packages: write
     steps:
       - uses: actions/checkout@v3
       - name: Log in to the GitHub Packages
